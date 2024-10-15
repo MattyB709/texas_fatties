@@ -1,13 +1,18 @@
 import Image from "next/image";
+import React from "react";
+import Button from "@/app/button";
 
 export default function Home() {
+
   return (
-    <div className="h-screen text-center">
+    <div className="h-screen text-center flex flex-col">
       <h1>Texas Fatties</h1>
-      <div className='flex justify-evenly h-3/4'>
-        <div className = "bg-orange-400 w-1/3">button 1</div>
-        <div className = "bg-orange-400 w-1/3">button 2</div>
+      <div className='flex-grow flex justify-evenly'>
+        <Button className="bg-orange-400 w-1/3">
+          <Image src= "/IMG_2346.JPG" width = {500} height = {1000} alt = "blind people"></Image>
+        </Button>
+        <Button className="bg-orange-400 w-1/3">button 2</Button>
       </div>
-      <h1>Made with hunger by 🫃</h1>
+      <h1 className="w-full bottom-0">Made with hunger by 🫃</h1>
     </div>);
 }
