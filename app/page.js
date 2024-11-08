@@ -11,7 +11,9 @@ export default function Home() {
         <Button className="bg-orange-400 w-1/3">
           <Image src= "/IMG_2346.JPG" width = {500} height = {1000} alt = "blind people"></Image>
         </Button>
-        <Button className="bg-orange-400 w-1/3">button 2</Button>
+        <Button className="bg-orange-400 w-1/3">
+          <Image src= "/Fork.jpeg" width = {500} height = {1000} alt = "blind people"></Image>
+        </Button>
       </div>
       <h1 className="w-full bottom-0">Made with hunger by 🫃</h1>
     </div>);
